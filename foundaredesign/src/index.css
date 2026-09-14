@@ -21,3 +21,31 @@
 .hero {
   height: calc(100vh - 140px);
 }
+/* .hero-img {
+  width: 50%;
+} */
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+.animate-scroll:hover {
+  animation-play-state: paused;
+}
+
+.about-card {
+  width: calc((100% / 3) - 33px);
+}
+
+  @media (max-width: 450px) {
+    .hero {
+      height: fit-content;
+    }
+    .about-card {
+      width: 100%;
+    }
+  }
